@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>CRISPR Off-Target Visualizer | Precision Gene Editing Tools</title>
+    <meta name="title" content="CRISPR Off-Target Visualizer | Precision Gene Editing Tools">
+    <meta name="description" content="A comprehensive bioinformatics tool for designing CRISPR guide RNAs and visualizing off-target effects with interactive D3 charts and AI-powered safety insights.">
+    <meta name="keywords" content="CRISPR, Cas9, Off-target analysis, Bioinformatics, Genome editing, Visualization, D3.js, React, Google Gemini">
+    <meta name="author" content="Bioinformatics Team">
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://crispr-visualizer.demo/">
+    <meta property="og:title" content="CRISPR Off-Target Visualizer">
+    <meta property="og:description" content="Visualize and analyze CRISPR off-target potential with high-performance genomic tools.">
+    <meta property="og:image" content="/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://crispr-visualizer.demo/">
+    <meta property="twitter:title" content="CRISPR Off-Target Visualizer">
+    <meta property="twitter:description" content="Visualize and analyze CRISPR off-target potential with high-performance genomic tools.">
+    <meta property="twitter:image" content="/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/responsive.css" />
+    <link rel="stylesheet" href="/styles/print.css" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      window.process = {
+        env: {
+          NODE_ENV: 'development'
+        }
+      };
+
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              science: {
+                50: '#f0f9ff',
+                100: '#e0f2fe',
+                500: '#0ea5e9',
+                600: '#0284c7',
+                700: '#0369a1',
+                800: '#075985',
+                900: '#0c4a6e',
+                950: '#082f49',
+              },
+              dna: {
+                a: '#10b981', // Emerald
+                c: '#3b82f6', // Blue
+                g: '#f59e0b', // Amber
+                t: '#ef4444', // Red
+              }
+            },
+            fontFamily: {
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            },
+            screens: {
+              'print': {'raw': 'print'},
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@18.3.1",
+    "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+    "react/": "https://esm.sh/react@18.3.1/",
+    "react": "https://esm.sh/react@18.3.1",
+    "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+    "react/jsx-dev-runtime": "https://esm.sh/react@18.3.1/jsx-dev-runtime",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "@remix-run/router": "https://esm.sh/@remix-run/router@1.15.3",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0",
+    "@google/genai": "https://esm.sh/@google/genai@0.0.12",
+    "zustand": "https://esm.sh/zustand@4.5.2",
+    "zustand/": "https://esm.sh/zustand@4.5.2/",
+    "d3": "https://esm.sh/d3@7.9.0",
+    "papaparse": "https://esm.sh/papaparse@5.4.1",
+    "html-to-image": "https://esm.sh/html-to-image@1.11.11",
+    "jspdf": "https://esm.sh/jspdf@2.5.1",
+    "jspdf-autotable": "https://esm.sh/jspdf-autotable@3.8.2",
+    "react-hot-toast": "https://esm.sh/react-hot-toast@2.4.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

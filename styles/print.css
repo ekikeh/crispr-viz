@@ -1,0 +1,104 @@
+@media print {
+  @page {
+    margin: 1cm;
+    size: landscape;
+  }
+
+  body {
+    background-color: white !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide Navigation and Interactive UI Elements */
+  header, 
+  footer, 
+  nav,
+  button,
+  input,
+  select,
+  [role="button"],
+  .no-print, 
+  .no-export,
+  .skip-link,
+  .toaster-wrapper {
+    display: none !important;
+  }
+
+  /* Reset Container Layouts */
+  #root, main, div, section {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    position: static !important;
+    display: block !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: auto !important;
+  }
+
+  /* Typography Overrides */
+  h1, h2, h3, h4, h5, h6, p, span, div {
+    color: #000 !important;
+    text-shadow: none !important;
+  }
+  
+  /* Specific Component Overrides */
+  .bg-slate-800, 
+  .bg-slate-900, 
+  .bg-slate-950,
+  .bg-science-900 {
+    background-color: transparent !important;
+    border: 1px solid #ddd !important;
+  }
+  
+  .text-slate-100,
+  .text-slate-200,
+  .text-slate-300,
+  .text-slate-400,
+  .text-science-400 {
+    color: #000 !important;
+  }
+  
+  /* SVG Visualization Handling */
+  svg {
+    max-width: 100% !important;
+    height: auto !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  
+  text {
+    fill: #000 !important;
+  }
+
+  /* Grid Layout Flattening */
+  .grid {
+    display: block !important;
+  }
+  
+  .col-span-full, 
+  .col-span-1, 
+  .col-span-2 {
+    width: 100% !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Page Break Utilities */
+  .print-break-before {
+    page-break-before: always;
+  }
+  
+  .print-break-after {
+    page-break-after: always;
+  }
+  
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}

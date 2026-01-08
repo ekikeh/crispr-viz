@@ -1,0 +1,5 @@
+{
+  "name": "CRISPR Off-Target Visualizer",
+  "description": "A bioinformatics tool for researchers to design CRISPR guide RNAs and visualize potential off-target genomic cuts using D3.js and AI-powered safety insights.",
+  "requestFramePermissions": []
+}
