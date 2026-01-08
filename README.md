@@ -40,8 +40,8 @@ A powerful bioinformatics tool designed for researchers to validate CRISPR guide
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/crispr-visualizer.git
-    cd crispr-visualizer
+    git clone https://github.com/yourusername/crispr-viz.git
+    cd crispr-viz
     ```
 
 2.  Install dependencies:
