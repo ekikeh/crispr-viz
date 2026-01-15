@@ -1,7 +1,7 @@
 import React from 'react';
 import { OffTargetHit } from '../types';
-import { AlignmentRow } from './AlignmentRow';
-import { NucleotideCell } from './NucleotideCell';
+import { AlignmentRow } from '../visualizations/AlignmentRow';
+import { NucleotideCell } from '../visualizations/NucleotideCell';
 import { AlignmentControls } from './AlignmentControls';
 import { useUIStore } from '../stores/uiStore';
 import { EmptyState } from './ui/EmptyState';
